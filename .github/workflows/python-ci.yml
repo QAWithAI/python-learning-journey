@@ -22,5 +22,12 @@ jobs:
         run: python --version
 
       - name: Check Python Syntax
-        run: 
-            find . -name "*.py" -exec python -m py_compile {} \;
+        run: |
+            echo "Python files found:"
+            find projects -name "*.py" -print
+
+            echo "Compiling Python files..."
+            
+               find projects -name "*.py" -exec python -m py_compile {} \;
+
+               echo "All Python files compiled successfully!"
