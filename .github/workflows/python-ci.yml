@@ -20,3 +20,7 @@ jobs:
 
       - name: Verify Python
         run: python --version
+
+      - name: Check Python Syntax
+        run: 
+            find . -name "*.py" -exec python -m py_compile {} \;
