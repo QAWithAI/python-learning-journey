@@ -44,3 +44,12 @@ pythonpath = .
 
 ---
 
+---
+
+## 💡 Engineering Lessons Learned
+
+- Why __init__.py matters
+- Why CI caught an issue that local testing missed
+- Why automated tests are valuable
+
+---
